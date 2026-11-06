@@ -6,7 +6,7 @@
 <title>Haus zu verkaufen – Deggendorf</title>
 <meta name="description" content="Großzügiges Haus mit Garten in Deggendorf, von privat. Video, Fotos, Grundrisse und Kontakt.">
 <meta property="og:title" content="Haus zu verkaufen – Deggendorf">
-<meta property="og:description" content="3 Etagen, ca. 168 m² laut Grundriss, Garten, 2 Balkone. Video, Fotos & Grundrisse.">
+<meta property="og:description" content="3 Etagen, ca. 168 m² laut Grundriss, Garten, 2 Balkone, 2 Garagen, ca. 900 m zum Klinikum. Video, Fotos & Grundrisse.">
 <meta property="og:image" content="img/wohnen-01.jpg">
 <meta name="theme-color" content="#2f5d46">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5d46'/%3E%3Cpath d='M14 32 32 16l18 16v18H38V38H26v12H14z' fill='%23f7f3ec'/%3E%3C/svg%3E">
@@ -111,6 +111,15 @@ section{padding:56px 0 8px}
 .rooms tr.ext td{color:var(--muted)}
 .floor-desc{margin:0 0 14px;color:var(--muted)}
 
+/* location */
+.places{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.pgroup{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 8px}
+.pgroup h3{font-size:1.15rem;margin-bottom:8px;color:var(--accent)}
+.pgroup ul{list-style:none;margin:0;padding:0}
+.pgroup li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:.93rem}
+.pgroup li:first-child{border-top:0}
+.pgroup em{font-style:normal;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+
 /* contact */
 .contact{background:var(--accent);color:var(--accent-ink);border-radius:22px;padding:28px 22px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
 .contact h2{color:inherit}
@@ -201,13 +210,15 @@ footer{padding:36px 0 110px;color:var(--muted);font-size:.85rem;text-align:cente
     <span class="chip" data-en="3 bathrooms + 2 WCs">3 Bäder + 2 WCs</span>
     <span class="chip" data-en="2 balconies">2 Balkone</span>
     <span class="chip" data-en="Large garden">Großer Garten</span>
-    <span class="chip" data-en="Garage">Garage</span>
+    <span class="chip" data-en="2 garages">2 Garagen</span>
+    <span class="chip" data-en="~900 m to the hospital">ca. 900 m zum Klinikum</span>
     <span class="chip" id="chip-price"></span>
   </div>
 
   <div class="cta">
     <a class="btn btn-primary" href="#video"><svg><use href="#i-play"/></svg><span data-en="Watch video">Video ansehen</span></a>
     <a class="btn btn-ghost" href="#grundrisse" data-en="Floor plans">Grundrisse</a>
+    <a class="btn btn-ghost" href="#lage" data-en="Location">Lage</a>
     <a class="btn btn-wa" id="wa-hero" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
   </div>
 
@@ -222,6 +233,7 @@ footer{padding:36px 0 110px;color:var(--muted);font-size:.85rem;text-align:cente
       <div class="fact"><b>2</b><span data-en="kitchens (GF + attic)">Küchen (EG + DG)</span></div>
       <div class="fact"><b>3 + 2</b><span data-en="bathrooms + guest WCs">Bäder + Gäste-WCs</span></div>
       <div class="fact"><b data-en="2 × 4.4 m²">2 × 4,4 m²</b><span data-en="balconies">Balkone</span></div>
+      <div class="fact"><b>2</b><span data-en="garages + room for approx. 5 cars on the street">Garagen + Platz für ca. 5 Autos an der Straße</span></div>
     </div>
     <p class="note" data-en="* Sum of the room areas shown on the floor plans (GF 65.6 m², UF 65.7 m², attic 36.3 m² plus sleeping area); balconies not included. Not an official living-area calculation.">* Summe der Raumflächen laut Grundrissen (EG 65,6 m², OG 65,7 m², DG 36,3 m² zzgl. Schlafbereich), ohne Balkone. Keine amtliche Wohnflächenberechnung.</p>
   </section>
@@ -239,7 +251,7 @@ footer{padding:36px 0 110px;color:var(--muted);font-size:.85rem;text-align:cente
         <li><span class="ic"><svg><use href="#i-tree"/></svg></span><div><b data-en="Large garden">Großer Garten</b><small data-en="Lawn, hedges and shrubs all around the house – room to play, garden and relax.">Rasen, Hecken und Sträucher rund ums Haus – Platz zum Spielen, Gärtnern und Entspannen.</small></div></li>
         <li><span class="ic"><svg><use href="#i-sun"/></svg></span><div><b data-en="Terrace &amp; 2 balconies">Terrasse &amp; 2 Balkone</b><small data-en="Paved terrace by the house, plus a balcony on the ground and upper floor.">Gepflasterte Terrasse am Haus, dazu je ein Balkon im Erd- und Obergeschoss.</small></div></li>
         <li><span class="ic"><svg><use href="#i-layers"/></svg></span><div><b data-en="Attic with its own kitchen &amp; bath">Dachgeschoss mit eigener Küche &amp; Bad</b><small data-en="Open living area under warm wooden ceilings – ideal as a guest flat, for grown-up children or to rent out.">Offener Wohnbereich unter warmer Holzdecke – ideal als Gästewohnung, für erwachsene Kinder oder zur Vermietung.</small></div></li>
-        <li><span class="ic"><svg><use href="#i-car"/></svg></span><div><b data-en="Garage &amp; driveway">Garage &amp; Zufahrt</b><small data-en="Paved driveway with a garage.">Gepflasterte Zufahrt mit Garage.</small></div></li>
+        <li><span class="ic"><svg><use href="#i-car"/></svg></span><div><b data-en="2 garages + parking">2 Garagen + Parkplätze</b><small data-en="Paved driveway with two garages – plus room for about 5 cars on the street in front of the house.">Gepflasterte Zufahrt mit zwei Garagen – zusätzlich Platz für ca. 5 Autos an der Straße vor dem Haus.</small></div></li>
         <li><span class="ic"><svg><use href="#i-key"/></svg></span><div><b data-en="Wooden floors">Holzböden</b><small data-en="Parquet in the bedrooms and hallways, wooden floorboards in the attic.">Parkett in Zimmern und Fluren, Dielenboden im Dachgeschoss.</small></div></li>
       </ul>
     </div>
@@ -267,6 +279,54 @@ footer{padding:36px 0 110px;color:var(--muted);font-size:.85rem;text-align:cente
         <table class="rooms" id="rooms"></table>
       </div>
     </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="lage">
+    <div class="eyebrow" data-en="Location">Lage</div>
+    <h2 data-en="Quiet, yet everything close by">Ruhig wohnen – und alles in der Nähe</h2>
+    <p class="lead" data-en="Residential area in Deggendorf-Thannberg. Kindergarten, playground and supermarket within walking distance – the hospital and the old town are only a few minutes away.">Wohngebiet in Deggendorf-Thannberg. Kindergarten, Spielplatz und Supermarkt sind zu Fuß erreichbar – Klinikum und Altstadt nur wenige Minuten entfernt.</p>
+    <div class="places">
+      <div class="pgroup">
+        <h3 data-en="Children &amp; family">Kinder &amp; Familie</h3>
+        <ul>
+          <li><span data-en="Hafenbrädl kindergarten">Hafenbrädl-Kindergarten</span><em data-en="same street">gleiche Straße</em></li>
+          <li><span data-en="Playground „Am Hammermühlbach“">Spielplatz „Am Hammermühlbach“</span><em>ca. 100 m</em></li>
+          <li><span data-en="Comenius-Gymnasium (grammar school)">Comenius-Gymnasium</span><em>ca. 800 m</em></li>
+          <li><span data-en="City park with playground">Stadtpark mit Spielplatz</span><em>ca. 900 m</em></li>
+          <li><span data-en="Crèche at the hospital">Krippe am Klinikum</span><em>ca. 900 m</em></li>
+        </ul>
+      </div>
+      <div class="pgroup">
+        <h3 data-en="Shopping">Einkaufen</h3>
+        <ul>
+          <li><span data-en="Bakery café (Wurm)">Bäckerei-Café Wurm</span><em>ca. 300 m</em></li>
+          <li><span data-en="NORMA supermarket + bakery">NORMA + Bäckerei Hahn</span><em>ca. 350 m</em></li>
+          <li><span>Lidl</span><em>ca. 700 m</em></li>
+          <li><span data-en="EDEKA, dm, pharmacy">EDEKA, dm, Apotheke</span><em>ca. 850 m</em></li>
+          <li><span data-en="Aldi Süd · Rewe">Aldi Süd · Rewe</span><em>1,1–1,4 km</em></li>
+        </ul>
+      </div>
+      <div class="pgroup">
+        <h3 data-en="Health">Gesundheit</h3>
+        <ul>
+          <li><span data-en="DONAUISAR hospital Deggendorf">DONAUISAR Klinikum Deggendorf</span><em>ca. 900 m</em></li>
+          <li><span data-en="Doctors &amp; dentists (Perlasberger Str.)">Ärzte &amp; Zahnärzte (Perlasberger Str.)</span><em>ca. 900 m</em></li>
+          <li><span data-en="Paediatricians am Pferdemarkt">Kinderärzte am Pferdemarkt</span><em>ca. 2 km</em></li>
+        </ul>
+      </div>
+      <div class="pgroup">
+        <h3 data-en="City &amp; transport">Stadt &amp; Verkehr</h3>
+        <ul>
+          <li><span data-en="Bus stop Dr.-Grashey-Straße">Bushaltestelle Dr.-Grashey-Straße</span><em>ca. 150 m</em></li>
+          <li><span data-en="Old town (Oberer Stadtplatz)">Altstadt / Oberer Stadtplatz</span><em>ca. 1,5 km</em></li>
+          <li><span data-en="Deggendorf main station">Deggendorf Hbf</span><em>ca. 1,7 km</em></li>
+          <li><span data-en="Deggendorf Institute of Technology (THD)">Technische Hochschule (THD)</span><em>ca. 1,7 km</em></li>
+          <li><span data-en="Shopping centre Degg's">Einkaufszentrum Degg's</span><em>ca. 1,9 km</em></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" data-en="Approximate straight-line distances from St.-Notker-Straße, rounded (source: OpenStreetMap, Nov 2026). Walking routes can be a little longer.">Ungefähre Entfernungen (Luftlinie) ab St.-Notker-Straße, gerundet – Quelle: OpenStreetMap, Nov. 2026. Fußwege können etwas länger sein.</p>
   </section>
 
   <!-- CONTACT -->
@@ -361,6 +421,8 @@ function setLang(l){
   LANG=l; document.documentElement.lang=l; document.documentElement.dataset.lang=l;
   document.querySelectorAll("[data-en]").forEach(el=>el.innerHTML = l==="en"?el.dataset.en:el.dataset.de);
   document.querySelectorAll("[data-en-alt]").forEach(el=>el.alt = l==="en"?el.dataset.enAlt:el.dataset.deAlt);
+  document.querySelectorAll(".pgroup em:not([data-en])").forEach(el=>{ if(!el.dataset.de) el.dataset.de=el.textContent;
+    el.textContent = l==="en" ? el.dataset.de.replace("ca. ","~").replace(/(\d),(\d)/g,"$1.$2") : el.dataset.de; });
   document.querySelectorAll("[data-set-lang]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.setLang===l));
   document.title = l==="en" ? "House for sale – Deggendorf" : "Haus zu verkaufen – Deggendorf";
   renderExtras(); renderGalleryTabs(); renderPlan(curFloor);
